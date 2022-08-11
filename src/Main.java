@@ -1,20 +1,16 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Задание 1 и 2
         int[] a = new int[]{1, 2, 3};
-        System.out.println(a[0] + ", " + a[1] + ", " + a[2]);
+        System.out.println(Arrays.toString(a));
 
         double [] b = {1.57, 7.654, 9.986};
-        System.out.println(b[0] + ", " + b[1] + ", " + b[2]);
+        System.out.println(Arrays.toString(b));
 
         int [] c = new int [] {1, 2, 3, 4, 5, 6};
-        for (int i = 0; i < c.length; i++) {
-            if (i < c.length - 1) {
-                System.out.print(c[i] + ", ");
-            } else {
-                System.out.println(c[i]);
-            }
-        }
+        System.out.println(Arrays.toString(c));
 
         // Задание 3
         for (int i = a.length - 1; i >= 0; i--) {
